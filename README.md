@@ -1,3 +1,5 @@
+
+
 # Open Silicon: A 4-Bit ALU ASIC Experiment
 
 An simple project exploring an open-source ASIC design flow,
@@ -28,6 +30,21 @@ The testbench checks 16 × 16 input combinations across six
 operations, for a total of 1,536 test cases.
 
 Result: All 1,536 ALU test cases passed.
+
+## Physical Layout
+
+The following image shows the ALU layout generated during this
+open-source ASIC design experiment.
+
+![ALU physical layout](docs/images/alu-layout.png)
+
+## Design Flow
+
+1. **RTL design:** Describe the 4-bit ALU in Verilog.
+2. **Functional verification:** Use Icarus Verilog; all 1,536 test cases passed.
+3. **Logic synthesis:** Use Yosys.
+4. **Physical implementation:** Use OpenLane 2 with the SKY130 PDK.
+5. **Layout inspection:** Inspect the generated GDSII in KLayout.
 
 Run the simulation from the project root:
 
