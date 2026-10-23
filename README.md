@@ -34,3 +34,10 @@ Run the simulation from the project root:
 ```bash
 iverilog -o alu_test alu.v tb_alu.v
 vvp alu_test
+
+## Physical Layout
+
+The following image shows the ALU layout generated during this
+open-source ASIC design experiment.
+
+![ALU physical layout](docs/images/alu-layout.png)
