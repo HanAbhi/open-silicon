@@ -1,0 +1,19 @@
+# Compiled simulation outputs
+alu_test
+*.vcd
+
+# OpenLane generated runs and intermediate files
+alu/runs/
+alu/results/
+alu/reports/
+alu/tmp/
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+
+# Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db

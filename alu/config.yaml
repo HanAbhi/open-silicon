@@ -1,0 +1,5 @@
+DESIGN_NAME: alu
+VERILOG_FILES: dir::src/alu.v
+
+CLOCK_PERIOD: 10
+CLOCK_PORT: ""
