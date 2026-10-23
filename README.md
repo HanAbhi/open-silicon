@@ -52,6 +52,7 @@ Run the simulation from the project root:
 iverilog -o alu_test alu.v tb_alu.v
 vvp alu_test
 
+```
 ## Physical Layout
 
 The following image shows the ALU layout generated during this
