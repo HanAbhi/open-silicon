@@ -25,10 +25,11 @@ From the repository root, run:
 ./run_sim.sh Expected result:
 
 PASS: All 1536 ALU test cases passed.
+```
 
 The testbench checks all 16 x 16 input combinations for each
 of the six supported ALU operations.
-```
+
 
 ##  2. OpenLane Configuration
 The project configuration is located at:
