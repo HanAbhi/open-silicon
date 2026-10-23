@@ -24,12 +24,18 @@ This 4-bit Arithmetic Logic Unit (ALU) supports:
 - SkyWater SKY130 PDK
 - KLayout for layout inspection
 
-## Simulation Results
+## Run the Simulation
 
-The testbench checks 16 × 16 input combinations across six
-operations, for a total of 1,536 test cases.
+Requirements: Icarus Verilog installed and available in your PATH.
 
-Result: All 1,536 ALU test cases passed.
+Run the testbench from the project root:
+
+```bash
+./run_sim.sh
+```
+
+The testbench checks 1,536 cases across the six supported operations.
+
 
 ## Physical Layout
 
