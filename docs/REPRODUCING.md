@@ -28,7 +28,9 @@ PASS: All 1536 ALU test cases passed.
 
 The testbench checks all 16 x 16 input combinations for each
 of the six supported ALU operations.
-2. OpenLane Configuration
+```
+
+##  2. OpenLane Configuration
 The project configuration is located at:
 
 alu/config.yaml
@@ -41,7 +43,8 @@ The configuration specifies a nominal clock period of 10
 and an empty clock port. The design is combinational, so this
 setting should not be interpreted as validated clock timing
 or an operating-frequency result.
-3. Physical Design
+
+## 3. Physical Design
 The original completed run was:
 
 RUN_2026-10-19_12-32-43
@@ -56,7 +59,8 @@ in a fresh clone.
 To reproduce this stage, install and configure OpenLane and
 the required PDK using the official documentation before
 running the flow with the project's configuration.
-4. Limitations
+
+## 4. Limitations
 This is an educational design experiment, not a fabricated
 chip or production-ready signoff.
 
