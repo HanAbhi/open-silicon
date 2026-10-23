@@ -12,24 +12,28 @@ Versions recorded from the development environment:
 - Yosys: 0.9
 - PDK: SkyWater SKY130A
 
-Your installed versions may differ.
+Your installed versions may differ from mine .
+
 
 ## 1. Run Functional Simulation
 
-Install Icarus Verilog and ensure `iverilog` and `vvp` are
-available in your PATH.
+Install Icarus Verilog and ensure `iverilog` and `vvp` are available in your PATH.
 
 From the repository root, run:
 
 ```bash
-./run_sim.sh Expected result:
+./run_sim.sh
+```
 
+Expected output:
+
+```text
+Compiling ALU and testbench...
+Running simulation...
 PASS: All 1536 ALU test cases passed.
 ```
 
-The testbench checks all 16 x 16 input combinations for each
-of the six supported ALU operations.
-
+The testbench checks all 16 × 16 input combinations for each of the six supported ALU operations.
 
 ##  2. OpenLane Configuration
 The project configuration is located at:
