@@ -41,3 +41,24 @@ The following image shows the ALU layout generated during this
 open-source ASIC design experiment.
 
 ![ALU physical layout](docs/images/alu-layout.png)
+
+## Design Flow
+
+1. **RTL design:** Describe the 4-bit ALU in Verilog.
+2. **Functional verification:** Use Icarus Verilog to test the
+   ALU operations. All 1,536 test cases passed.
+3. **Logic synthesis:** Use Yosys to translate the RTL into a
+   gate-level representation.
+4. **Physical implementation:** Run OpenLane 2 with the
+   SkyWater SKY130 PDK.
+5. **Layout inspection:** Inspect the generated GDSII in KLayout.
+
+The completed OpenLane run reported passing DRC, LVS, and
+antenna checks. This project is an educational experiment,
+not a fabricated chip or production signoff.
+
+## Future Improvements
+
+- Add reproducible setup and OpenLane execution instructions.
+- Document synthesis and physical-design reports.
+- Investigate timing constraints and physical-design warnings.
