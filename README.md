@@ -60,6 +60,22 @@ open-source ASIC design experiment.
 
 ![ALU physical layout](docs/images/alu-layout.png)
 
+## Synthesis Results
+
+The ALU RTL was synthesized using Yosys and mapped to SkyWater SKY130 high-density standard cells.
+
+| Metric | Result |
+|---|---:|
+| Mapped standard-cell instances | 56 |
+| Reported standard-cell area | 496.7264 µm² |
+| Sequential cell area | 0 µm² |
+| Total ports | 5 |
+| Total port bits | 16 |
+
+The synthesized netlist contains no sequential cells, consistent with the ALU's combinational design.
+
+These figures are taken from the Yosys synthesis statistics report generated during the OpenLane 2 physical-design flow. The reported cell area is not the total die area.
+
 ## Design Flow
 
 1. **RTL design:** Describe the 4-bit ALU in Verilog.
