@@ -2,7 +2,7 @@
 
 # Open Silicon: A 4-Bit ALU ASIC Experiment
 
-An simple project exploring an open-source ASIC design flow,
+A simple project exploring an open-source ASIC design flow,
 from Verilog RTL to a physical GDSII layout.
 
 ## Project Overview
