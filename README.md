@@ -60,22 +60,6 @@ open-source ASIC design experiment.
 
 ![ALU physical layout](docs/images/alu-layout.png)
 
-## Synthesis Results
-
-The ALU RTL was synthesized using Yosys and mapped to SkyWater SKY130 high-density standard cells.
-
-| Metric | Result |
-|---|---:|
-| Mapped standard-cell instances | 56 |
-| Reported standard-cell area | 496.7264 µm² |
-| Sequential cell area | 0 µm² |
-| Total ports | 5 |
-| Total port bits | 16 |
-
-The synthesized netlist contains no sequential cells, consistent with the ALU's combinational design.
-
-These figures are taken from the Yosys synthesis statistics report generated during the OpenLane 2 physical-design flow. The reported cell area is not the total die area.
-
 ## Design Flow
 
 1. **RTL design:** Describe the 4-bit ALU in Verilog.
@@ -98,6 +82,49 @@ vvp alu_test
 The completed OpenLane run reported passing DRC, LVS, and
 antenna checks. This project is an educational experiment,
 not a fabricated chip or production signoff.
+
+## Synthesis Results
+
+The ALU RTL was synthesized using Yosys and mapped to SkyWater SKY130 high-density standard cells.
+
+| Metric | Result |
+|---|---:|
+| Mapped standard-cell instances | 56 |
+| Reported standard-cell area | 496.7264 µm² |
+| Sequential cell area | 0 µm² |
+| Total ports | 5 |
+| Total port bits | 16 |
+
+The synthesized netlist contains no sequential cells, consistent with the ALU's combinational design.
+
+These figures are taken from the Yosys synthesis statistics report generated during the OpenLane 2 physical-design flow. The reported cell area is not the total die area.
+
+## Physical Design Results
+
+The 4-bit ALU was implemented using OpenLane 2 and the SkyWater SKY130 PDK.
+
+### Reported Metrics
+
+| Metric | Result |
+|---|---:|
+| Final standard-cell instances | 86 |
+| Standard-cell area | 497.978 µm² |
+| Core area | 935.898 µm² |
+| Die area | 2,267.6 µm² |
+| Standard-cell utilization | 53.21% |
+| Inferred latches | 0 |
+| Unmapped instances | 0 |
+| Synthesis-check errors | 0 |
+| OpenLane flow errors | 0 |
+| OpenLane flow warnings | 1 |
+
+### Implementation Notes
+
+The final metrics were extracted from the OpenLane run's `final/metrics.json` file. The implementation completed with no reported flow errors and one flow warning.
+
+The design is an educational open-source ASIC experiment. These results do not represent a fabricated chip or independent production signoff.
+
+
 
 ## Future Improvements
 
