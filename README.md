@@ -140,3 +140,6 @@ The report also confirmed that all shapes on both the VPWR and VGND nets were co
 
 These results are from the generated OpenLane 2 run and should be interpreted within the assumptions of its power-integrity analysis. They do not independently establish production-level power integrity or complete ASIC signoff.
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
