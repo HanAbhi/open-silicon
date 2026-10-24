@@ -36,6 +36,14 @@ Run the testbench from the project root:
 
 The testbench checks 1,536 cases across the six supported operations.
 
+## Simulation Results
+
+The ALU testbench verified all 1,536 input combinations across the six supported operations.
+
+![ALU simulation results](docs/images/alu-simulation-pass.png)
+
+All test cases passed during functional simulation using Icarus Verilog.
+
 ## Simulation Waveform
 
 The ALU's functional behavior was inspected using GTKWave after running the Icarus Verilog testbench.
