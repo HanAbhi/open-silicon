@@ -122,9 +122,23 @@ The 4-bit ALU was implemented using OpenLane 2 and the SkyWater SKY130 PDK.
 
 The final metrics were extracted from the OpenLane run's `final/metrics.json` file. The implementation completed with no reported flow errors and one flow warning.
 
-The design is an educational open-source ASIC experiment. These results do not represent a fabricated chip or independent production signoff.
+The design is a simple open-source ASIC experiment.
+ These results do not represent a fabricated chip or independent production signoff.
 
 
+### Power Integrity: IR-Drop Report
+
+The OpenROAD power-integrity report for the nominal typical corner (`nom_tt_025C_1v80`) reported:
+
+| Metric | VPWR | VGND |
+|---|---:|---:|
+| Average IR drop | 6.79 µV | 7.25 µV |
+| Worst-case IR drop | 12.8 µV | 15.4 µV |
+| Reported percentage drop | 0.00% | 0.00% |
+
+The report also confirmed that all shapes on both the VPWR and VGND nets were connected.
+
+These results are from the generated OpenLane 2 run and should be interpreted within the assumptions of its power-integrity analysis. They do not independently establish production-level power integrity or complete ASIC signoff.
 
 ## Future Improvements
 
